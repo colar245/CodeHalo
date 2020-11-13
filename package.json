@@ -4,18 +4,24 @@
   "description": "CodeHalo website, WIP",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/assets/css/ --recursive  --output-style compressed",
+    "build": "npm-run-all build-sass build-11ty",
+    "build-sass": "node-sass scss/ -o dist/assets/css/ --recursive  --output-style compressed",
+    "build-11ty": "eleventy",
     "server": "live-server",
-    "build": "eleventy",
-    "start": "eleventy --serve & npm run sass"
+    "watch": "npm-run-all --parallel watch-sass watch-11ty",
+    "watch-sass": "node-sass -w scss/ -o dist/assets/css/ --recursive  --output-style compressed",
+    "watch-11ty": "eleventy --serve",
+    "start": "npm run watch"
   },
   "author": "Lazar Mladenovic",
   "license": "MIT",
-  "devDependencies": {
+  "devDependencies": {},
+  "keywords": [],
+  "dependencies": {
     "@11ty/eleventy": "^0.10.0",
     "node-sass": "^4.14.1",
     "sass": "^1.23.1",
-    "bootstrap": "4.x"
-  },
-  "keywords": []
+    "bootstrap": "4.x",
+    "npm-run-all": "^4.1.5"
+  }
 }

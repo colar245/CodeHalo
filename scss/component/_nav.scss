@@ -1,0 +1,46 @@
+.navbar {
+  border-bottom: 0.25rem solid $color-primary;
+}
+nav {
+  .dropdown_list {
+    list-style: none;
+  }
+  .nav-link {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+    color: $color-primary !important;
+  }
+  .nav-link:active {
+    color: $color-primary-l !important;
+  }
+  .active {
+    color: $color-primary-l !important;
+  }
+  .logo {
+    display: none;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+  }
+  .logo img {
+    width: 30%;
+    overflow: hidden;
+  }
+  .logo:hover,
+  .logo:focus {
+    text-decoration: none;
+  }
+  .header_img_sm {
+    display: inline-block;
+  }
+  @media (min-width: 768px) {
+    .logo {
+      display: inline-block;
+    }
+    ul #nav_dropdown {
+      padding-left: 0px;
+    }
+  }
+}

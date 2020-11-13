@@ -1,0 +1,21 @@
+{
+  "name": "codehalo",
+  "version": "0.1.0",
+  "description": "CodeHalo website, WIP",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/assets/css/ --recursive  --output-style compressed",
+    "server": "live-server",
+    "build": "eleventy",
+    "start": "eleventy --serve & npm run sass"
+  },
+  "author": "Lazar Mladenovic",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.23.1",
+    "bootstrap": "4.x"
+  },
+  "keywords": []
+}

@@ -1,0 +1,30 @@
+.hero {
+  background-image: url("../img/bg-hero-img.jpg");
+  min-height: $banner-size;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+
+  .overlay {
+    background-color: $overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: $banner-size;
+  }
+  .hero-inner {
+    text-transform: uppercase;
+    display: block;
+
+    h1 {
+      margin-top: 30%;
+      position: relative;
+      /*TODO*/
+    }
+
+    h2 {
+    }
+  }
+}

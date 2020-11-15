@@ -1,23 +1,34 @@
-// Color
+/* 
+ * # Color 
+ *
+ */
 $color-primary-l: #56b9a1;
 $color-primary: #36928f;
 $color-primary-d: #135e5a;
-$color-dark-l: #666666;
-$color-dark: #474747;
-$color-dark-d: #333333;
+$color-dark-l: #828282;
+$color-dark: #333333;
+$color-dark-d: #050505;
 $color-light-l: #ffffff;
 $color-light: #e0e0e0;
 $color-light-d: #c2c2c2;
 $overlay: rgba(7, 53, 41, 0.521);
 
-// Font weight
+/* 
+ * # Size 
+ *
+ */
+$banner-size: 50em;
+
+/* 
+ * # Font Weight 
+ *
+ */
 $weight-light: 150;
 $weight: 300;
 $weight-bold: 500;
 $weight-extrabold: 800;
 
-// Size
-$banner-size: 50em;
-
-// Font family
-$font-primary: Helvetica, sans-serif;
+/* 
+ * # Font Family
+ *
+ */

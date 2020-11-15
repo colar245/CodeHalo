@@ -1,13 +1,68 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+/*  
+ *
+ *  Coki v1.0 Stylesheet
+ *  14-11-2020
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *  # fonts & icons 
+ *  # normalize
+ *  # Global variables & typography
+ *      ## Variables
+ *      ## Base Typography
+ *      ## Grid
+ *      ## Vendors
+ *  # MISC
+ *      ## Helper
+ *  # Components
+ *  # Sections
+ *
+ */
 
-/*!
-* Bootstrap END    
-* coki custom SCSS
-*/
-// @import "libs/reset";
-@import "libs/vars";
-@import "libs/helper";
-@import "libs/typography";
+/* 
+ * # Fonts & Icons
+ *
+ */
+    //  TODO font-awesome
+    //  TODO micons
+    @import "libs/fonts";
+/* 
+ * # normalize.css
+ * normalize.css v5.0.0 | MIT License | 
+ * github.com/necolas/normalize.css 
+ *
+ */
+    @import "libs/normalize";
+/* 
+ * # Global variables & typography 
+ *
+ */
+    @import "libs/vars";
+    @import "libs/base";
+    @import "libs/grid";
+    @import "libs/vendor";
+/* 
+ * # MISC 
+ *
+ */
+    @import "libs/helper";
+ /* 
+ * # Components 
+ *
+ */
+    @import "component/preloader";
+    @import "component/forms";
+    @import "component/buttons";
+    @import "component/components";
+    @import "component/header";
+/*
+ * # Sections
+ *
+ */
+    @import "page/home";
+    @import "page/about";
+    @import "page/services";
+    @import "page/works";
+    @import "page/contact";
+    @import "page/footer";
 
-@import "component/nav";
-@import "component/hero";

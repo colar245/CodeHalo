@@ -1,27 +1,102 @@
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Misc Helper Styles
+ * -------------------------------------- */
+.is-hidden {
+  display: none;
+}
+
+.is-invisible {
+  visibility: hidden;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.remove-bottom {
+  margin-bottom: 0;
+}
+
+.half-bottom {
+  margin-bottom: 1.5rem !important;
+}
+
+.add-bottom {
+  margin-bottom: 3rem !important;
+}
+
+.no-border {
+  border: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Colors
+ * -------------------------------------------------*/
+
 .color-p {
-  color: $color-primary !important;
+  color: $color-primary ;
 }
 .color-p-l {
-  color: $color-primary-l !important;
+  color: $color-primary-l ;
 }
 .color-p-d {
-  color: $color-primary-d !important;
+  color: $color-primary-d ;
 }
 .color-d {
-  color: $color-dark !important;
+  color: $color-dark ;
 }
 .color-d-l {
-  color: $color-dark-l !important;
+  color: $color-dark-l ;
 }
 .color-d-d {
-  color: $color-dark-d !important;
+  color: $color-dark-d ;
 }
 .color-l {
-  color: $color-light !important;
+  color: $color-light ;
 }
 .color-l-l {
-  color: $color-light-l !important;
+  color: $color-light-l ;
 }
 .color-l-d {
-  color: $color-light-d !important;
+  color: $color-light-d ;
 }

@@ -16,30 +16,31 @@
     background-color: transparent;
     position: relative;
     display: table;
+
+    .shadow-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .4;
+        background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+        background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+        // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .4;
+        background-color: #000000;
+    }
 }
 
-.s-home .shadow-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .4;
-    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
-}
-
-.s-home .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .4;
-    background-color: #000000;
-}
 
 .no-js .s-home {
     background: #000000;
@@ -57,27 +58,29 @@
     padding-bottom: 15.6rem;
     position: relative;
     overflow: hidden;
+    
+    h3 {
+        font-family: "montserrat-medium", sans-serif;
+        font-size: 1.6rem;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 1.2rem;
+        margin-left: 6px;
+    }
+
+    h2 {
+        font-family: "montserrat-medium", sans-serif;
+        font-size: 6.3rem;
+        line-height: 1.333;
+        margin-top: 0;
+        color: #FFFFFF;
+    }
 }
 
-.home-content h3 {
-    font-family: "montserrat-medium", sans-serif;
-    font-size: 1.6rem;
-    color: rgba(255, 255, 255, 0.5);
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 1.2rem;
-    margin-left: 6px;
-}
 
-.home-content h1 {
-    font-family: "montserrat-medium", sans-serif;
-    font-size: 6.3rem;
-    line-height: 1.333;
-    margin-top: 0;
-    color: #FFFFFF;
-}
 
 .home-content__main {
     padding-top: 24rem;
@@ -87,67 +90,68 @@
 .home-content__buttons {
     padding-top: 6rem;
     text-align: left;
+    .btn {
+        width: 215px;
+        border-color: #FFFFFF;
+        color: #FFFFFF;
+        margin: 1.5rem 1.5rem 0 0;
+        letter-spacing: .25rem;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .btn:last-child {
+        margin-right: 0;
+    }
+    
+    .btn:hover, 
+    .btn:focus {
+        background: #FFFFFF !important;
+        color: #000000;
+    }
 }
 
-.home-content__buttons .btn {
-    width: 215px;
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-    margin: 1.5rem 1.5rem 0 0;
-    letter-spacing: .25rem;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
-.home-content__buttons .btn:last-child {
-    margin-right: 0;
-}
-
-.home-content__buttons .btn:hover, 
-.home-content__buttons .btn:focus {
-    background: #FFFFFF !important;
-    color: #000000;
-}
 
 .home-content__scroll {
     position: absolute;
     right: 9.5rem;
     bottom: 8.4rem;
+
+    a {
+        font-family: "montserrat-semibold", sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        color: #FFFFFF;
+        position: relative;
+        display: inline-block;
+        line-height: 3rem;
+        padding-left: 2.5rem;
+    }
+    
+    a::before {
+        border-bottom: 2px solid $color-primary;
+        border-right: 2px solid $color-primary;
+        content: '';
+        display: block;
+        height: 8px;
+        width: 8px;
+        margin-top: -6px;
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform-origin: 66% 66%;
+        -ms-transform-origin: 66% 66%;
+        transform-origin: 66% 66%;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+    }
 }
 
-.home-content__scroll a {
-    font-family: "montserrat-semibold", sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    color: #FFFFFF;
-    position: relative;
-    display: inline-block;
-    line-height: 3rem;
-    padding-left: 2.5rem;
-}
-
-.home-content__scroll a::before {
-    border-bottom: 2px solid $color-primary;
-    border-right: 2px solid $color-primary;
-    content: '';
-    display: block;
-    height: 8px;
-    width: 8px;
-    margin-top: -6px;
-    pointer-events: none;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    -webkit-transform-origin: 66% 66%;
-    -ms-transform-origin: 66% 66%;
-    transform-origin: 66% 66%;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
-}
 
 .home-content__line {
     display: block;
@@ -173,66 +177,68 @@
     -webkit-transform: translate3d(0, -50%, 0);
     -ms-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
+
+    a {
+        color: white;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    li {
+        position: relative;
+        padding: .9rem 0;
+    }
+    
+    li a {
+        display: block;
+        width: 33px;
+        height: 33px;
+    }
+    
+    i, 
+    span {
+        position: absolute;
+        top: 0;
+        line-height: 33px;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    i {
+        font-size: 14px;
+        right: 0;
+        text-align: center;
+        display: inline-block;
+        width: 33px;
+        height: 33px;
+        line-height: calc(33px - 4px);
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+    }
+    
+    span {
+        color: $color-primary;
+        right: 4.5rem;
+        font-size: 1.3rem;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+    
+    li:hover span {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
-.home-social a {
-    color: white;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
-.home-social li {
-    position: relative;
-    padding: .9rem 0;
-}
-
-.home-social li a {
-    display: block;
-    width: 33px;
-    height: 33px;
-}
-
-.home-social i, .home-social span {
-    position: absolute;
-    top: 0;
-    line-height: 33px;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
-.home-social i {
-    font-size: 14px;
-    right: 0;
-    text-align: center;
-    display: inline-block;
-    width: 33px;
-    height: 33px;
-    line-height: calc(33px - 4px);
-    border: 2px solid #FFFFFF;
-    border-radius: 50%;
-}
-
-.home-social span {
-    color: $color-primary;
-    right: 4.5rem;
-    font-size: 1.3rem;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    -webkit-transform-origin: 100% 50%;
-    -ms-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-}
-
-.home-social li:hover span {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-}
 
 
 /* animate .home-content__main
@@ -322,7 +328,7 @@ html.no-csstransitions .home-content__main {
  * home
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1500px) {
-    .home-content h1 {
+    .home-content h2 {
         font-size: 6rem;
     }
     .home-content__main {
@@ -331,7 +337,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 1200px) {
-    .home-content h1 {
+    .home-content h2 {
         font-size: 5.5rem;
     }
     .home-content__main {
@@ -340,7 +346,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 1000px) {
-    .home-content h1 {
+    .home-content h2 {
         font-size: 4.6rem;
     }
     .home-content br {
@@ -357,7 +363,7 @@ html.no-csstransitions .home-content__main {
     .home-content h3 {
         font-size: 1.5rem;
     }
-    .home-content h1 {
+    .home-content h2 {
         font-size: 4rem;
     }
     .home-content__main {
@@ -391,7 +397,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
-    .home-content h1 {
+    .home-content h2 {
         font-size: 3.8rem;
     }
     .home-social {
@@ -419,7 +425,7 @@ html.no-csstransitions .home-content__main {
     .s-home {
         min-height: 642px;
     }
-    .home-content h1 {
+    .home-content h2 {
         font-size: 3.5rem;
     }
     .home-content__main {
@@ -442,7 +448,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 450px) {
-    .home-content h1 {
+    .home-content h2 {
         font-size: 3.3rem;
     }
 }
@@ -451,7 +457,7 @@ html.no-csstransitions .home-content__main {
     .s-home {
         min-height: 630px;
     }
-    .home-content h1 {
+    .home-content h2 {
         font-size: 3.2rem;
     }
     .home-content__main {

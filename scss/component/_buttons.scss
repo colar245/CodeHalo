@@ -23,8 +23,8 @@
      cursor: pointer;
      -webkit-transition: all 0.3s ease-in-out;
      transition: all 0.3s ease-in-out;
-     background-color: #c5c5c5;
-     border: .2rem solid #c5c5c5;
+     background-color: $color-light-d;
+     border: .2rem solid $color-light-d;
  }
  
  .btn:hover,
@@ -37,8 +37,8 @@
  input[type="submit"]:focus,
  input[type="reset"]:focus,
  input[type="button"]:focus {
-     background-color: #b8b8b8;
-     border-color: #b8b8b8;
+     background-color: $color-dark-l;
+     border-color: $color-dark-l;
      color: #000000;
      outline: 0;
  }
@@ -54,7 +54,7 @@
  input[type="button"].btn--primary {
      background: $color-primary;
      border-color: $color-primary;
-     color: #FFFFFF;
+     color: $color-light-l;
  }
  
  .btn.btn--primary:hover,
@@ -67,8 +67,8 @@
  input[type="submit"].btn--primary:focus,
  input[type="reset"].btn--primary:focus,
  input[type="button"].btn--primary:focus {
-     background: #33a242;
-     border-color: #33a242;
+     background: $color-primary-l;
+     border-color: $color-primary-l;
  }
  
  

@@ -72,7 +72,7 @@
       opacity: 0.4;
     }
     #active {
-      opacity: 0.8 !important;
+      opacity: 0.8;
     }
   }
   span {
@@ -100,6 +100,9 @@
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+  }
+  a:hover img {
+    opacity: 0.6 !important;
   }
 }
 
@@ -308,8 +311,8 @@
   display: block;
   position: absolute;
   top: 0;
-  left: -70px;
-  width: 70px;
+  left: -100px;
+  width: 100px;
   padding-left: 12px;
 }
 

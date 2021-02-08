@@ -1,14 +1,15 @@
 ---json
 {
   "layout": "main.hbs",
-  "lang": "en",
-  "title": "Code Halo | professionally built websites",
-  "desc": "Internet presence and digital identity is vital to the survival of your business in today's digital era. We create high quality websites that will make your business stand out!",
+  "lang": "rs",
+  "permalink": "/{{ lang }}/",
+  "title": "Code Halo | profesionalno izrađene veb stranice",
+  "desc": "Prisustvo na Internetu i digitalni identitet su vitalni za opstanak vašeg poslovanja u današnjoj digitalnoj eri. Izrađujemo visokokvalitetne veb stranice koje će istaknuti vaše poslovanje!",
   "keywords": "Web, website, biznis, affordable, Dizajn, Veb",
   "header": {
     "Close": "Zatvori",
     "Navigation": "Sadržaj",
-    "Home": "Kuća",
+    "Home": "Početak",
     "About": "O Nama",
     "Services": "Usluge",
     "Contact": "Kontakt",

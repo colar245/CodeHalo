@@ -1,0 +1,93 @@
+<section id="contact" class="s-contact">
+    <div class="overlay"></div>
+    <div class="contact__line"></div>
+
+    <div class="row section-header" data-aos="fade-up">
+        <div class="col-full">
+            <h3 class="subhead">{{ contact.h3 }}</h3>
+            <h2 class="display-2 display-2--light">
+                {{ contact.h2 }}
+            </h2>
+        </div>
+    </div>
+
+    <div class="row contact-content" data-aos="fade-up">
+        <div class="contact-primary">
+            <h3 class="h6">{{ contact.h6 }}</h3>
+
+            <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <fieldset>
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="{{ contact.mail.name }}"
+                            value="" minlength="2" required="" aria-required="true" class="full-width" />
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="{{ contact.mail.email }}"
+                            value="" required="" aria-required="true" class="full-width" />
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject"
+                            placeholder="{{ contact.mail.subject }}" value="" class="full-width" />
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="{{ contact.mail.msg }}"
+                            rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">{{ contact.submit}}</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">{{ contact.sending }}</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <!-- contact-warning -->
+            <div class="message-warning">
+                {{ contact.error }}
+            </div>
+
+            <!-- contact-success -->
+            <div class="message-success">
+                {{ contact.sucess }}<br />
+            </div>
+        </div>
+        <!-- end contact-primary -->
+
+        <div class="contact-secondary">
+            <div class="contact-info">
+                <h3 class="h6 hide-on-fullwidth">{{ contact.info }}</h3>
+
+                <div class="cinfo">
+                    <h5>{{ contact.i-email }}</h5>
+                    <p>{{ data.email }}</p>
+                </div>
+
+                <div class="cinfo">
+                    <h5>{{ contact.i-phone }}</h5>
+                    <p>{{ data.phone }}<br /></p>
+                </div>
+
+                <ul class="contact-social">
+                    <li>
+                        <a href="{{ data.fb }}"><i class="fa fa-facebook" alt="Facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="{{ data.insta }}"><i class="fa fa-instagram" alt="Instagram"
+                                aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <!-- end contact-social -->
+            </div>
+            <!-- end contact-info -->
+        </div>
+        <!-- end contact-secondary -->
+    </div>
+    <!-- end contact-content -->
+</section>
+<!-- end s-contact -->

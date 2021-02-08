@@ -1,0 +1,26 @@
+<footer>
+    <div class="row footer-main">
+        <div class="col-six tab-full left footer-desc">
+            <div class="footer-logo"></div>
+            {{ footer.msg}}
+        </div>
+
+        <div class="col-six tab-full right footer-subscribe">
+            <h4>{{ footer.h }}</h4>
+            <p>
+                {{ footer.p }}
+            </p>
+
+            <div class="subscribe-form">
+                <form id="mc-form" class="group" novalidate="true">
+                    <input type="email" value="" name="EMAIL" class="email" id="mc-email"
+                        placeholder="{{ footer.email }}" required="" />
+                    <input type="submit" name="subscribe" value="{{ footer.sub }}" />
+                    <label for="mc-email" class="subscribe-message"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end footer-main -->
+</footer>
+<!-- end footer -->

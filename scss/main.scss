@@ -23,45 +23,44 @@
  * # Fonts & Icons
  *
  */
-    //  TODO font-awesome
-    //  TODO micons
-    @import "libs/fonts";
+//  TODO font-awesome
+//  TODO micons
+@import "libs/fonts";
 /* 
  * # normalize.css
  * normalize.css v5.0.0 | MIT License | 
  * github.com/necolas/normalize.css 
  *
  */
-    @import "libs/normalize";
+@import "libs/normalize";
 /* 
  * # Global variables & typography 
  *
  */
-    @import "libs/vars";
-    @import "libs/base";
-    @import "libs/grid";
-    @import "libs/vendor";
+@import "libs/vars";
+@import "libs/base";
+@import "libs/grid";
+@import "libs/vendor";
 /* 
  * # MISC 
  *
  */
-    @import "libs/helper";
- /* 
+@import "libs/helper";
+/* 
  * # Components 
  *
  */
-    @import "component/preloader";
-    @import "component/forms";
-    @import "component/buttons";
-    @import "component/components";
-    @import "component/header";
+@import "component/preloader";
+@import "component/forms";
+@import "component/buttons";
+@import "component/components";
+@import "component/header";
 /*
  * # Sections
  *
  */
-    @import "page/home";
-    @import "page/about";
-    @import "page/services";
-    @import "page/contact";
-    @import "page/footer";
-
+@import "page/home";
+@import "page/about";
+@import "page/services";
+@import "page/contact";
+@import "page/footer";

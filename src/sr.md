@@ -1,7 +1,7 @@
 ---json
 {
   "layout": "main.hbs",
-  "lang": "rs",
+  "lang": "sr",
   "permalink": "/{{ lang }}/",
   "title": "Code Halo | profesionalno izrađene veb stranice",
   "desc": "Prisustvo na Internetu i digitalni identitet su vitalni za opstanak vašeg poslovanja u današnjoj digitalnoj eri. Izrađujemo visokokvalitetne veb stranice koje će istaknuti vaše poslovanje!",

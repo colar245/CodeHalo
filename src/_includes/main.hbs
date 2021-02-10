@@ -14,7 +14,7 @@
     <meta name="author" content="https://github.com/colar245" />
     <meta name="description" content="{{{ desc }}}" />
     <meta name="keywords" content="{{ keywords }}" />
-    <link rel="canonical" href="{{ data.url }}" />
+    <link rel="canonical" href="{{ data.url }}/{{ lang }}" />
 
     <!-- mobile specific metas
     ================================================== -->
@@ -70,8 +70,8 @@
         "@type" : "LocalBusiness",
         "name" : "Code Halo",
         "image" : "https://codehalo.netlify.app/assets/images/logo.png",
-        "telephone" : "+381 64 1343081",
-        "email" : "code.halo888@gmail.com"
+        "telephone" : "{{ data.phone }}",
+        "email" : "{{ data.email }}"
         }
     </script>
 </head>

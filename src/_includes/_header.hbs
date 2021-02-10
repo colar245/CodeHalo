@@ -7,32 +7,33 @@
     <div class="local">
         <a href="/sr">
             <img id="" src="../assets/images/serbia.png" alt="Srpski" />
-            <span>Srpski</span>
+            <span lang="sr">Srpski</span>
         </a>
         <a href="/en">
             <img id="" src="../assets/images/united-kingdom.png" alt="English" />
-            <span>English</span>
+            <span lang="en">English</span>
         </a>
     </div>
 
     <nav class="header-nav">
-        <a href="#0" class="header-nav__close" title="close"><span>{{ header.Close }}</span></a>
+        <a href="#0" class="header-nav__close" title="close"><span lang="{{ lang }}">{{ header.Close }}</span></a>
 
         <div class="header-nav__content">
-            <h3>{{ header.Navigation }}</h3>
+            <h3 lang="{{ lang }}">{{ header.Navigation }}</h3>
 
             <ul class="header-nav__list">
                 <li class="current">
-                    <a class="smoothscroll" href="#home" title="home">{{ header.Home }}</a>
+                    <a class="smoothscroll" href="#home" title="home" lang="{{ lang }}">{{ header.Home }}</a>
                 </li>
                 <li>
-                    <a class="smoothscroll" href="#about" title="about">{{ header.About }}</a>
+                    <a class="smoothscroll" href="#about" title="about" lang="{{ lang }}">{{ header.About }}</a>
                 </li>
                 <li>
-                    <a class="smoothscroll" href="#services" title="services">{{ header.Services }}</a>
+                    <a class="smoothscroll" href="#services" title="services" lang="{{ lang }}">{{ header.Services
+                        }}</a>
                 </li>
                 <li>
-                    <a class="smoothscroll" href="#contact" title="contact">{{ header.Contact }}</a>
+                    <a class="smoothscroll" href="#contact" title="contact" lang="{{ lang }}">{{ header.Contact }}</a>
                 </li>
             </ul>
 
@@ -50,7 +51,7 @@
     <!-- end header-nav -->
 
     <a class="header-menu-toggle" href="#0">
-        <span class="header-menu-text">{{ header.Menu }}</span>
+        <span class="header-menu-text" lang="{{ lang }}">{{ header.Menu }}</span>
         <span class="header-menu-icon"></span>
     </a>
 </header>

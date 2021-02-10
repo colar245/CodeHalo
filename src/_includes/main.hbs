@@ -9,7 +9,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="UTF-8" />
-    <title>{{ title }}</title>
+    <title lang="{{ lang }}">{{ title }}</title>
     <meta name="robots" content="index, follow">
     <meta name="author" content="https://github.com/colar245" />
     <meta name="description" content="{{{ desc }}}" />
@@ -60,10 +60,10 @@
     <meta property="og:image" content="../assets/images/ogImage.jpg" />
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:description" content="{{{ desc }}}" />
-    <meta property="og:site_name" content="{{ title }}" />
+    <meta property="og:site_name" content="Code Halo" />
     <meta property="og:url" content="{{ data.url }}" />
     {{!-- Schema --}}
-    <!-- JSON-LD ознаке -->
+    <!-- JSON-LD -->
     <script type="application/ld+json">
         {
         "@context" : "http://schema.org",
@@ -76,7 +76,7 @@
     </script>
 </head>
 
-<body id="top">
+<body id="top" lang="{{ lang }}">
     <!-- header
     ================================================== -->
     {{> _header }}

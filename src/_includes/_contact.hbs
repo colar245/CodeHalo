@@ -4,8 +4,8 @@
 
     <div class="row section-header" data-aos="fade-up">
         <div class="col-full">
-            <h3 class="subhead">{{ contact.h3 }}</h3>
-            <h2 class="display-2 display-2--light">
+            <h3 class="subhead" lang="{{ lang }}">{{ contact.h3 }}</h3>
+            <h2 class="display-2 display-2--light" lang="{{ lang }}">
                 {{ contact.h2 }}
             </h2>
         </div>
@@ -13,7 +13,7 @@
 
     <div class="row contact-content" data-aos="fade-up">
         <div class="contact-primary">
-            <h3 class="h6">{{ contact.h6 }}</h3>
+            <h3 class="h6" lang="{{ lang }}">{{ contact.h6 }}</h3>
 
             <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
                 <fieldset>
@@ -52,12 +52,12 @@
             </form>
 
             <!-- contact-warning -->
-            <div class="message-warning">
+            <div class="message-warning" lang="{{ lang }}">
                 {{ contact.error }}
             </div>
 
             <!-- contact-success -->
-            <div class="message-success">
+            <div class="message-success" lang="{{ lang }}">
                 {{ contact.sucess }}<br />
             </div>
         </div>
@@ -65,15 +65,15 @@
 
         <div class="contact-secondary">
             <div class="contact-info">
-                <h3 class="h6 hide-on-fullwidth">{{ contact.info }}</h3>
+                <h3 class="h6 hide-on-fullwidth" lang="{{ lang }}">{{ contact.info }}</h3>
 
                 <div class="cinfo">
-                    <h5>{{ contact.i-email }}</h5>
+                    <h5 lang="{{ lang }}">{{ contact.i-email }}</h5>
                     <p>{{ data.email }}</p>
                 </div>
 
                 <div class="cinfo">
-                    <h5>{{ contact.i-phone }}</h5>
+                    <h5 lang="{{ lang }}">{{ contact.i-phone }}</h5>
                     <p>{{ data.phone }}<br /></p>
                 </div>
 

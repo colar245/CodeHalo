@@ -1,1 +1,3 @@
 Sitemap: https://codehalo.netlify.app/sitemap.xml
+User-agent: *
+Disallow:

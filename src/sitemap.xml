@@ -6,15 +6,15 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://codehalo.netlify.app/</loc>
+  <loc>https://codehalo.rs</loc>
     <xhtml:link 
         rel="alternate"
         hreflang="en"
-        href="https://codehalo.netlify.app/en"/>
+        href="https://codehalo.rs/en"/>
     <xhtml:link 
         rel="alternate"
         hreflang="sr"
-        href="https://codehalo.netlify.app/sr"/>
+        href="https://codehalo.rs/sr"/>
   <lastmod>2021-02-09T00:04:34+00:00</lastmod>
   <priority>1.00</priority>
 </url>

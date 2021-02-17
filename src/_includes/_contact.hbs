@@ -19,23 +19,23 @@
                 <fieldset>
                     <div class="form-field">
                         <input name="contactName" type="text" id="contactName" placeholder="{{ contact.mail.name }}"
-                            label="{{ contact.mail.name }}" value="" minlength="2" required="" aria-required="true"
-                            class="full-width" />
+                            label="{{ contact.mail.name }}" aria-label="{{ contact.mail.name }}" value="" minlength="2"
+                            required="" aria-required="true" class="full-width" />
                     </div>
                     <div class="form-field">
                         <input name="contactEmail" type="email" id="contactEmail" placeholder="{{ contact.mail.email }}"
-                            label="{{ contact.mail.email }}" value="" required="" aria-required="true"
-                            class="full-width" />
+                            label="{{ contact.mail.email }}" aria-label="{{ contact.mail.email }}" value="" required=""
+                            aria-required="true" class="full-width" />
                     </div>
                     <div class="form-field">
                         <input name="contactSubject" type="text" id="contactSubject"
-                            placeholder="{{ contact.mail.subject }}" label="{{ contact.mail.subject }}" value=""
-                            class="full-width" />
+                            placeholder="{{ contact.mail.subject }}" label="{{ contact.mail.subject }}"
+                            aria-label="{{ contact.mail.subject }}" value="" class="full-width" />
                     </div>
                     <div class="form-field">
                         <textarea name="contactMessage" id="contactMessage" placeholder="{{ contact.mail.msg }}"
-                            label="{{ contact.mail.msg }}" rows="10" cols="50" required="" aria-required="true"
-                            class="full-width"></textarea>
+                            label="{{ contact.mail.msg }}" aria-label="{{ contact.mail.msg }}" rows="10" cols="50"
+                            required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
                         <button class="full-width btn--primary">{{ contact.submit}}</button>
@@ -79,10 +79,11 @@
 
                 <ul class="contact-social">
                     <li>
-                        <a href="{{ data.fb }}"><i class="fa fa-facebook" alt="Facebook" aria-hidden="true"></i></a>
+                        <a href="{{ data.fb }}" alt="Facebook" aria-label="Facebook"><i class="fa fa-facebook"
+                                aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="{{ data.insta }}"><i class="fa fa-instagram" alt="Instagram"
+                        <a href="{{ data.insta }}" aria-label="Instagram" alt="Instagram"><i class="fa fa-instagram"
                                 aria-hidden="true"></i></a>
                     </li>
                 </ul>

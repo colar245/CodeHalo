@@ -5,21 +5,15 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-<loc>https://codehalo.rs</loc> 
-<xhtml:link rel="alternate" hreflang="x-default" href="https://codehalo.rs" />
-<xhtml:link rel="alternate" hreflang="en" href="https://codehalo.rs/en" /> 
-<xhtml:link rel="alternate" hreflang="sr" href="https://codehalo.rs/sr" />  
-</url>
-<url>
 <loc>https://codehalo.rs/en/</loc> 
-<xhtml:link rel="alternate" hreflang="x-default" href="https://codehalo.rs" />
-<xhtml:link rel="alternate" hreflang="en" href="https://codehalo.rs/en" /> 
-<xhtml:link rel="alternate" hreflang="sr" href="https://codehalo.rs/sr" />  
+<xhtml:link rel="alternate" hreflang="x-default" href="https://codehalo.rs/en/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://codehalo.rs/en/" /> 
+<xhtml:link rel="alternate" hreflang="sr" href="https://codehalo.rs/sr/" />  
 </url>
 <url>
 <loc>https://codehalo.rs/sr/</loc> 
-<xhtml:link rel="alternate" hreflang="x-default" href="https://codehalo.rs" />
-<xhtml:link rel="alternate" hreflang="en" href="https://codehalo.rs/en" /> 
-<xhtml:link rel="alternate" hreflang="sr" href="https://codehalo.rs/sr" />  
+<xhtml:link rel="alternate" hreflang="x-default" href="https://codehalo.rs/en/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://codehalo.rs/en/" /> 
+<xhtml:link rel="alternate" hreflang="sr" href="https://codehalo.rs/sr/" />  
 </url>
 </urlset>

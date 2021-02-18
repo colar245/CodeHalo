@@ -4,7 +4,6 @@
   clear: both;
 }
 
-
 /* Misc Helper Styles
  * -------------------------------------- */
 .is-hidden {
@@ -74,29 +73,29 @@
  * -------------------------------------------------*/
 
 .color-p {
-  color: $color-primary ;
+  color: $color-primary !important;
 }
 .color-p-l {
-  color: $color-primary-l ;
+  color: $color-primary-l !important;
 }
 .color-p-d {
-  color: $color-primary-d ;
+  color: $color-primary-d !important;
 }
 .color-d {
-  color: $color-dark ;
+  color: $color-dark !important;
 }
 .color-d-l {
-  color: $color-dark-l ;
+  color: $color-dark-l !important;
 }
 .color-d-d {
-  color: $color-dark-d ;
+  color: $color-dark-d !important;
 }
 .color-l {
-  color: $color-light ;
+  color: $color-light !important;
 }
 .color-l-l {
-  color: $color-light-l ;
+  color: $color-light-l !important;
 }
 .color-l-d {
-  color: $color-light-d ;
+  color: $color-light-d !important;
 }

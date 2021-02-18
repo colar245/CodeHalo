@@ -2,95 +2,95 @@
  * # contact 
  *
  * ------------------------------------------------------------------- */
- .s-contact {
-    background-color: $color-dark-d;
-    background-image: url("../images/contact-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center, center;
-    padding-top: 15rem;
-    padding-bottom: 12rem;
-    color: rgba(255, 255, 255, 0.5);
-    position: relative;
+.s-contact {
+  background-color: $color-dark-d;
+  background-image: url("../images/contact-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center, center;
+  padding-top: 15rem;
+  padding-bottom: 12rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
 }
 
 .s-contact .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .8;
-    background-color: $color-dark-d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-color: $color-dark-d;
 }
 
 .s-contact .form-field {
-    position: relative;
+  position: relative;
 }
 
 .s-contact .form-field:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .s-contact .form-field label {
-    font-family: "montserrat-light", sans-serif;
-    font-size: 1rem;
-    line-height: 2.4rem;
-    position: absolute;
-    bottom: -0.3rem;
-    right: .6rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    padding: 0 2rem;
-    margin: 0;
-    color: #FFFFFF;
-    background: $color-primary;
+  font-family: "montserrat-light", sans-serif;
+  font-size: 1rem;
+  line-height: 2.4rem;
+  position: absolute;
+  bottom: -0.3rem;
+  right: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0 2rem;
+  margin: 0;
+  color: $color-light-d;
+  background: $color-primary;
 }
 
 .s-contact .form-field label::after {
-    content: "";
-    position: absolute;
-    left: -5px;
-    top: 50%;
-    margin-top: -6px;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-right: 5px solid $color-primary;
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  margin-top: -6px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid $color-primary;
 }
 
 .contact__line {
-    display: block;
-    width: 2px;
-    height: 20.4rem;
-    background-color: $color-primary;
-    position: absolute;
-    left: 50%;
-    top: -10.2rem;
-    margin-left: -1px;
+  display: block;
+  width: 2px;
+  height: 20.4rem;
+  background-color: $color-primary;
+  position: absolute;
+  left: 50%;
+  top: -10.2rem;
+  margin-left: -1px;
 }
 
 .contact-content {
-    max-width: 1000px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgba(255, 255, 255, 0.4);
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    font-family: "montserrat-light", sans-serif;
-    font-size: 1.5rem;
-    line-height: 2;
-    position: relative;
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: $color-light-d;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-family: "montserrat-light", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2;
+  position: relative;
 }
 
 .contact-content h3 {
-    margin-top: 0;
-    margin-bottom: 6.6rem;
-    color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 6.6rem;
+  color: $color-light-d;
 }
 
 .contact-content h5 {
-    margin-top: 0;
-    color: $color-primary;
+  margin-top: 0;
+  color: $color-primary;
 }
 
 .contact-content input[type="email"],
@@ -102,9 +102,9 @@
 .contact-content input[type="password"],
 .contact-content textarea,
 .contact-content select {
-    color: rgba(255, 255, 255, 0.6);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-    margin-bottom: .9rem;
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  margin-bottom: 0.9rem;
 }
 
 .contact-content input[type="email"]:focus,
@@ -116,281 +116,288 @@
 .contact-content input[type="password"]:focus,
 .contact-content textarea:focus,
 .contact-content select:focus {
-    color: #FFFFFF;
-    border-bottom: 1px solid $color-primary;
+  color: $color-light-d;
+  border-bottom: 1px solid $color-primary;
 }
 
 .contact-content button,
 .contact-content .btn {
-    margin-top: 3.6rem;
+  margin-top: 3.6rem;
 }
 .contact-content input::-webkit-input-placeholder,
 .contact-content select::-webkit-input-placeholder,
 .contact-content textarea::-webkit-input-placeholder {
-    color: $color-dark-l;
+  color: $color-dark-l;
 }
 
 .contact-content input:-moz-placeholder,
 .contact-content select:-moz-placeholder,
 .contact-content textarea:-moz-placeholder {
-    color: $color-dark-l;    /* Firefox 18- */
+  color: $color-dark-l; /* Firefox 18- */
 }
 
 .contact-content input::-moz-placeholder,
 .contact-content select::-moz-placeholder,
 .contact-content textarea::-moz-placeholder {
-    color: $color-dark-l;    /* Firefox 19+ */
+  color: $color-dark-l; /* Firefox 19+ */
 }
 
 .contact-content input:-ms-input-placeholder,
 .contact-content select:-ms-input-placeholder,
 .contact-content textarea:-ms-input-placeholder {
-    color: $color-dark-l;
+  color: $color-dark-l;
 }
 
 .contact-content input.placeholder,
 .contact-content select.placeholder,
 .contact-content textarea.placeholder {
-    color: $color-dark-l !important;
+  color: $color-dark-l !important;
 }
-.contact-primary, .contact-secondary {
-    float: left;
-    padding: 0 5rem;
+.contact-primary,
+.contact-secondary {
+  float: left;
+  padding: 0 5rem;
 }
 
 .contact-primary {
-    width: 65%;
+  width: 65%;
 }
 
 .contact-primary #contactForm {
-    margin-top: -1.5rem;
+  margin-top: -1.5rem;
 }
 
 .contact-secondary {
-    width: 35%;
+  width: 35%;
 }
 
 .contact-secondary::before {
-    content: "";
-    display: block;
-    width: 35%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background-color: $color-dark-d;
+  content: "";
+  display: block;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $color-dark-d;
 }
 
 .contact-secondary .contact-info {
-    position: relative;
+  position: relative;
 }
 
 .contact-secondary .cinfo {
-    margin-bottom: 4.8rem;
+  margin-bottom: 4.8rem;
 }
 
 .contact-social {
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    font-size: 2rem;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  font-size: 2rem;
 }
 
 .contact-social li {
-    margin-right: 15px;
-    padding-left: 0;
-    display: inline-block;
+  margin-right: 15px;
+  padding-left: 0;
+  display: inline-block;
 }
 
 .contact-social li a {
-    color: white;
+  color: $color-light-d;
 }
 
-.contact-social li a:hover, 
+.contact-social li a:hover,
 .contact-social li a:focus {
-    color: $color-primary;
+  color: $color-primary;
 }
 
 .contact-social li:last-child {
-    margin: 0;
+  margin: 0;
 }
 
-.message-warning, 
+.message-warning,
 .message-success {
-    display: none;
-    background: $color-dark-d;
-    font-size: 1.5rem;
-    line-height: 2;
-    padding: 3rem;
-    margin-bottom: 3.6rem;
-    width: 100%;
+  display: none;
+  background: $color-dark-d;
+  font-size: 1.5rem;
+  line-height: 2;
+  padding: 3rem;
+  margin-bottom: 3.6rem;
+  width: 100%;
 }
 
 .message-warning {
-    color: $color-warning;
+  color: $color-warning;
 }
 
 .message-success {
-    color: $color-primary;
+  color: $color-primary;
 }
 
-.message-warning i, .message-success i {
-    margin-right: 10px;
-    font-size: 1.2rem;
+.message-warning i,
+.message-success i {
+  margin-right: 10px;
+  font-size: 1.2rem;
 }
-
 
 /* form loader
  * ----------------------------------------------- */
 .submit-loader {
-    display: none;
-    position: relative;
-    left: 0;
-    top: 1.8rem;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 3rem;
+  display: none;
+  position: relative;
+  left: 0;
+  top: 1.8rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .submit-loader .text-loader {
-    display: none;
-    font-family: "montserrat-regular", sans-serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-    line-height: 1.846;
-    color: #FFFFFF;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
+  display: none;
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.846;
+  color: $color-light-d;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 
 .oldie .submit-loader .s-loader {
-    display: none;
+  display: none;
 }
 
 .oldie .submit-loader .text-loader {
-    display: block;
+  display: block;
 }
-
 
 /* --------------------------------------------------------------- 
  * ## loader animation 
  * --------------------------------------------------------------- */
 .s-loader {
-    margin: 1.2rem auto 3rem;
-    width: 70px;
-    text-align: center;
-    -webkit-transform: translateX(0.45rem);
-    -ms-transform: translateX(0.45rem);
-    transform: translateX(0.45rem);
+  margin: 1.2rem auto 3rem;
+  width: 70px;
+  text-align: center;
+  -webkit-transform: translateX(0.45rem);
+  -ms-transform: translateX(0.45rem);
+  transform: translateX(0.45rem);
 }
 
 .s-loader > div {
-    width: 9px;
-    height: 9px;
-    background-color: #FFFFFF;
-    border-radius: 100%;
-    display: inline-block;
-    margin-right: .9rem;
-    -webkit-animation: bouncedelay 1.4s infinite ease-in-out both;
-    animation: bouncedelay 1.4s infinite ease-in-out both;
+  width: 9px;
+  height: 9px;
+  background-color: $color-light-d;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 0.9rem;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out both;
+  animation: bouncedelay 1.4s infinite ease-in-out both;
 }
 
 .s-loader .bounce1 {
-    -webkit-animation-delay: -0.32s;
-    animation-delay: -0.32s;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
 }
 
 .s-loader .bounce2 {
-    -webkit-animation-delay: -0.16s;
-    animation-delay: -0.16s;
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
 }
 
 @-webkit-keyframes bouncedelay {
-    0%, 80%, 100% {
-        -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-        transform: scale(0);
-    }
-    40% {
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-    }
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 @keyframes bouncedelay {
-    0%, 80%, 100% {
-        -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-        transform: scale(0);
-    }
-    40% {
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-    }
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
-
 
 /* ------------------------------------------------------------------- 
  * responsive:
  * contact
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .contact-content {
-        max-width: 900px;
-    }
+  .contact-content {
+    max-width: 900px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-    .contact-content {
-        max-width: 700px;
-    }
-    .contact-primary, .contact-secondary {
-        float: none;
-        width: 100%;
-    }
-    .contact-primary #contactForm {
-        margin-top: -1.5rem;
-        margin-bottom: 7.2rem;
-    }
-    .contact-secondary .hide-on-fullwidth {
-        display: none;
-    }
-    .contact-secondary::before {
-        display: none;
-    }
-    .message-warning, .message-success {
-        margin-bottom: 6rem;
-    }
+  .contact-content {
+    max-width: 700px;
+  }
+  .contact-primary,
+  .contact-secondary {
+    float: none;
+    width: 100%;
+  }
+  .contact-primary #contactForm {
+    margin-top: -1.5rem;
+    margin-bottom: 7.2rem;
+  }
+  .contact-secondary .hide-on-fullwidth {
+    display: none;
+  }
+  .contact-secondary::before {
+    display: none;
+  }
+  .message-warning,
+  .message-success {
+    margin-bottom: 6rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .contact-content h3 {
-        text-align: center;
-    }
+  .contact-content h3 {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .s-contact {
-        padding-top: 12rem;
-        padding-bottom: 0;
-    }
-    .contact__line {
-        height: 14.4rem;
-        top: -7.2rem;
-    }
-    .contact-content {
-        padding-bottom: 12rem;
-        text-align: center;
-    }
-    .contact-primary, .contact-secondary {
-        padding: 0 20px;
-    }
+  .s-contact {
+    padding-top: 12rem;
+    padding-bottom: 0;
+  }
+  .contact__line {
+    height: 14.4rem;
+    top: -7.2rem;
+  }
+  .contact-content {
+    padding-bottom: 12rem;
+    text-align: center;
+  }
+  .contact-primary,
+  .contact-secondary {
+    padding: 0 20px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    .contact-primary, .contact-secondary {
-        padding: 0 5px;
-    }
+  .contact-primary,
+  .contact-secondary {
+    padding: 0 5px;
+  }
 }

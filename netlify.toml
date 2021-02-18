@@ -33,4 +33,4 @@
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "default-src 'self' *.fontawesome.com fontawesome.com code.jquery.com *.google.com *.gstatic.com/recaptcha 'unsafe-inline' 'unsafe-eval'"
+    Content-Security-Policy = "default-src 'self' *.fontawesome.com fontawesome.com code.jquery.com *.google.com *.gstatic.com 'unsafe-inline' 'unsafe-eval'"

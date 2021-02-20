@@ -25,6 +25,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "https://codehalo.netlify.app/*"
+  to = "https://codehalo.rs/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"

@@ -3,7 +3,7 @@
   "layout": "main.hbs",
   "lang": "sr",
   "permalink": "/{{ lang }}/",
-  "title": "Code Halo | profesionalna izrada web sajtova",
+  "title": "Code Halo | Profesionalna izrada web sajtova",
   "desc": "Prisustvo na Internetu i digitalni identitet su od vitalnog značaja za opstanak vašeg preduzeća u današnjoj digitalnoj eri. Izrađujemo visokokvalitetne veb stranice koje će poboljšati vaše poslovanje!",
   "keywords": "Web, website, biznis, affordable, Dizajn, Veb",
   "header": {

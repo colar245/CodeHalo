@@ -3,7 +3,7 @@
   "layout": "main.hbs",
   "lang": "en",
   "permalink": "/{{ lang }}/",
-  "title": "Code Halo | professionally built websites",
+  "title": "Code Halo | Professionally built websites",
   "desc": "Internet presence and digital identity is vital to the survival of your business in today's digital era. We create high quality websites that will make your business stand out!",
   "keywords": "Web, website, business, affordable, Design",
   "header": {

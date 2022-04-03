@@ -1,3 +1,2 @@
 # Redirects
 / /en/ 301!
-https://codehalo.netlify.app/* https://codehalo.rs/:splat 301!
